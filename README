@@ -1,0 +1,14 @@
+get_macro:
+
+Prints the value of a C macro.
+
+Usage: ./get_macro -m macro [-l HEADER FILE] [-s]
+
+-m macro:The macro string
+-l HEADER FILE: Optional header file that contains the macro
+-s: The value of macro is assumed to be integer. Supplying this argument
+    indicates that the macro is a string.
+-h: Prints this help message
+
+Example:
+./get_macro/get_macro -m O_CREAT -l fcntl.h
